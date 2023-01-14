@@ -36,7 +36,7 @@ pipeline {
         stage('Code Package') {
             steps {
                 echo 'Creating War Artifact'
-                sh 'java -version'
+                sh 'java --version'
                 sh 'mvn clean package'
             }
         }
